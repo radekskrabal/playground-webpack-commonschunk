@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "target": "es6",
+    "outDir": "./dist",
+    "inlineSourceMap": true,
+    "removeComments": false,
+    "suppressExcessPropertyErrors": false
+  },
+  "files": [
+    "./definitions/jquery.d.ts",
+    "./definitions/require.d.ts",
+    "./src/entry-dog.ts",
+    "./src/entry-person.ts",
+    "./src/Dog.ts",
+    "./src/Person.ts",
+    "./src/World.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
