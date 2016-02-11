@@ -7,11 +7,12 @@
   },
   "devDependencies": {
     "rimraf": "*",
+    "ts-loader": "*",
     "typescript": "*",
-    "webpack": "^1.12.13"
+    "webpack": "*"
   },
   "scripts": {
-    "build": "tsc && webpack",
+    "build": "webpack",
     "prebuild": "rimraf .\\dist"
   }
 }

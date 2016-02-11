@@ -9,15 +9,20 @@ module.exports = {
         sourcePrefix: '    '
     },
 
-    // Currently we need to add '.js' to resolve.extensions array. 
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.js'],
-        root: './dist'
+        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
+        root: './src'
+    },
+
+    module: {
+        loaders: [
+            { test: /\x?$/, loader: 'ts-loader' }
+        ]
     },
 
     entry: {
-        e1: 'entry-dog.js',
-        e2: 'entry-person.js'
+        e1: './src/entry-dog.ts',
+        e2: './src/entry-person.ts'
     },
 
     plugins: [
